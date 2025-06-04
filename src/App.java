@@ -10,11 +10,13 @@ public class App {
 
     GamePanel gamePanel = new GamePanel();
     window.add(gamePanel);
-    
+
     window.pack();
 
     // the window will be displayed at the center of the screen
     window.setLocationRelativeTo(null);
     window.setVisible(true);
+
+    gamePanel.startGameThread();
   }
 }
